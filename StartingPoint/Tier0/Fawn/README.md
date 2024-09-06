@@ -42,8 +42,6 @@ Fawn is a very easy machine on Hack The Box Starting Point Tier 0 that focuses o
 
 > Unix
 
-![nmap](nmap.png)
-
 ## Task 7
 
 **What is the command we need to run in order to display the 'ftp' client help menu?**
@@ -76,7 +74,7 @@ Fawn is a very easy machine on Hack The Box Starting Point Tier 0 that focuses o
 
 > get
 
-We use the command `ftp 10.129.5.181` to login to the FTP server with username `anonymous` and a blank passowrd. We use the command `get flag.txt' to download the `flag.txt` file.
+We use the command `ftp 10.129.5.181` to login to the FTP server with username `anonymous` and a blank password. We use the command `get flag.txt' to download the `flag.txt` file.
 ![Download file found on FTP server](get.png)
 
 ## Flag

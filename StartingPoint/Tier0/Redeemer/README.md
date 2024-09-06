@@ -6,6 +6,7 @@ Redeemer is a very easy machine on Hack The Box Starting Point Tier 0 that focus
 **Which TCP port is open on the machine?**
 > 6379
 
+We use the `nmap` command with the `-p-` flag to scan every port on the machine.
 ![nmap scan](portscan.png)
 
 ## Task 2
