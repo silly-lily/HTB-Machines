@@ -47,6 +47,7 @@ Meow is a very easy machine on Hack The Box Starting Point Tier 0 that focuses o
 > root
 
 We try default and common usernames until we find that the username `root` is able to log in with a blank password.
+
 ![login](login.png)
 
 ## Flag
@@ -54,4 +55,5 @@ We try default and common usernames until we find that the username `root` is ab
 > b40abdfe23665f766f9c61ecba8a4c19
 
 Once we login to telnet as root, we use the command `ls` and see that there is a `flag.txt` file. Lastly, we use the command `cat flag.txt` to view the contents of the file.
+
 ![flag](flag.png)

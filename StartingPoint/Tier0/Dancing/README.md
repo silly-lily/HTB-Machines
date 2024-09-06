@@ -43,6 +43,7 @@ Dancing is a very easy machine on Hack The Box Starting Point Tier 0 that focuse
 > WorkShares
 
 We try accessing every share using a blank password except `IPC$`. We find that `WorkShares` is accessible with a blank password.
+
 ![accessing with blank password](access.png)
 
 ## Task 7
@@ -52,6 +53,7 @@ We try accessing every share using a blank password except `IPC$`. We find that 
 > get
 
 We use the `get` command in the SMB shell to download the `flag.txt` file.
+
 ![download flag](download.png)
 
 ## Flag
@@ -59,4 +61,5 @@ We use the `get` command in the SMB shell to download the `flag.txt` file.
 > 5f61c10dffbc77a704d76016a22f1664
 
 We exit the SMB shell and then use the `cat` command to view the contents of `flag.txt`.
+
 ![flag.txt](flag.png)

@@ -34,6 +34,7 @@ Explosion is a very easy machine on Hack The Box Starting Point Tier 0 that focu
 > Administrator
 
 We try default accounts with the `/cert:ignore` switch and find that the `Administrator` can login with a blank password.
+
 ![rdp command](rdp_command.png)
 
 
@@ -42,7 +43,9 @@ We try default accounts with the `/cert:ignore` switch and find that the `Admini
 > 951fa96d7830c451b536be5a6be008a0
 
 Once we login with the `Administrator` username, we see a desktop projection.
+
 ![desktop projection](desktop.png)
 
 On the desktop projection, we find and open a file named `flag`.
+
 ![Flag](flag.png)

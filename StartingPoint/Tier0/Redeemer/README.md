@@ -7,6 +7,7 @@ Redeemer is a very easy machine on Hack The Box Starting Point Tier 0 that focus
 > 6379
 
 We use the `nmap` command with the `-p-` flag to scan every port on the machine.
+
 ![nmap scan](portscan.png)
 
 ## Task 2
@@ -26,6 +27,7 @@ We use the `nmap` command with the `-p-` flag to scan every port on the machine.
 > -h
 
 We use the `redis-cli` command with the `-h` flag to connect to the redis server with hostname `10.129.152.42`.
+
 ![specifying hostname](hostname.png)
 
 ## Task 6
@@ -43,10 +45,12 @@ We use the `redis-cli` command with the `-h` flag to connect to the redis server
 > 4
 
 We use the `select 0` command to choose the database with index 0. Then we use the `keys *` command to see that there is 4 keys inside the database.
+
 ![keys inside database with index 0](keys.png)
 
 ## Flag
 > 03e1d2b376c37ab3f5319922053953eb
 
 We use the `get` command to view the value of the flag key.
+
 ![flag](flag.png)
