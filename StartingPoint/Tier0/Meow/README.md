@@ -1,6 +1,6 @@
 # Meow Machine
 
-Meow is a very easy machine on Hack The Box that focuses on telnet and nmap.
+Meow is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on telnet.
 
 ## Task 1
 
