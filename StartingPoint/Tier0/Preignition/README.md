@@ -1,6 +1,6 @@
 # Preignition Machine
 
-Preignition is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on web applications and gobuster.
+Preignition is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on dir busting using Gobuster.
 
 ## Task 1
 

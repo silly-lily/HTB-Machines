@@ -1,6 +1,6 @@
 # Ignition
 
-Ignition is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on Magento and exploiting weak credentials.
+Ignition is a very easy machine on Hack The Box Starting Point Tier 1 that focuses exploiting weak Magento credentials.
 
 ## Task 1
 **Which service version is found to be running on port 80?**

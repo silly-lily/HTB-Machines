@@ -1,6 +1,6 @@
 # Fawn Machine
 
-Fawn is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on ftp.
+Fawn is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on connecting to FTP anonymously.
 
 ## Task 1
 

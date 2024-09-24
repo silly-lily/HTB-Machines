@@ -1,5 +1,5 @@
 # Appointment Machine
-Appointment Machine is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on SQLi.
+Appointment Machine is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on dir busting using Gobuster and SQLi.
 
 ## Task 1
 **What does the acronym SQL stand for?**

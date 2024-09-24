@@ -1,6 +1,6 @@
 # Synced Machine
 
-Synced is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on the rsync protocol.
+Synced is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on connecting to rsync anonymously.
 
 ## Task 1
 **What is the default port for rsync?**

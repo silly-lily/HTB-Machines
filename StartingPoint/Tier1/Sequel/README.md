@@ -1,6 +1,6 @@
 # Sequel
 
-Sequel is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on MariaDB MySQL Databases.
+Sequel is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on logging into MariaDB MySQL Databases a password.
 
 ## Task 1
 **During our scan, which port do we find serving MySQL?**

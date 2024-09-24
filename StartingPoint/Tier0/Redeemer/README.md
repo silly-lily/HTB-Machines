@@ -1,6 +1,6 @@
 # Redeemer Machine
 
-Redeemer is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on redis.
+Redeemer is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on remotely accessing Redis databases.
 
 ## Task 1
 **Which TCP port is open on the machine?**
@@ -15,7 +15,7 @@ We use the `nmap` command with the `-p-` flag to scan every port on the machine.
 > redis
 
 ## Task 3
-*8What type of database is Redis? Choose from the following options: (i) In-memory Database, (ii) Traditional Database**
+*What type of database is Redis? Choose from the following options: (i) In-memory Database, (ii) Traditional Database**
 > In-memory Database
 
 ## Task 4
