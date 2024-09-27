@@ -1,6 +1,6 @@
 # Crocodile
 
-Crocodile is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on exploiting FTP misconfigurations to steal user credentials and using Gobuster to discover web pages.
+Crocodile is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on exploiting FTP misconfigurations to steal user credentials and using Gobuster to discover web pages.
 
 ## Task 1
 

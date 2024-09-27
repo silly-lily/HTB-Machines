@@ -1,3 +1,4 @@
 *.ovpn
 TEMPLATE.md
 notes.txt
+.vscode

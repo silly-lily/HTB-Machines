@@ -1,6 +1,6 @@
 # Responder
 
-Responder is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on remote file inclusion vulnerabilities, login credential theft, and weak credentials using Responder, John the Ripper, and Evil-WinRM.
+Responder is a very easy windows machine on Hack The Box Starting Point Tier 1 that focuses on remote file inclusion vulnerabilities, login credential theft, and weak credentials using Responder, John the Ripper, and Evil-WinRM.
 
 ## Task 1
 

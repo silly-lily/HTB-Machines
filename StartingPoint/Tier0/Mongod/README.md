@@ -1,6 +1,6 @@
 # Mongod Machine
 
-Mongod is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on exploiting a MongoDB misconfiguration.
+Mongod is a very easy linux machine on Hack The Box Starting Point Tier 0 that focuses on exploiting a MongoDB misconfiguration.
 
 ## Task 1
 

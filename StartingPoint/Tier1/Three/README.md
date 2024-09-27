@@ -1,6 +1,6 @@
 # Three
 
-Three is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on compromising and php webserver hosted by an AWS S3 bucket by creating a reverse shell.
+Three is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on compromising and php webserver hosted by an AWS S3 bucket by creating a reverse shell.
 
 ## Task 1
 

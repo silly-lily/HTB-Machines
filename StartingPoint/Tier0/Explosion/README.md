@@ -1,6 +1,6 @@
 # Explosion Machine
 
-Explosion is a very easy machine on Hack The Box Starting Point Tier 0 that focuses on exploiting an RDP misconfiguration.
+Explosion is a very easy Windows machine on Hack The Box Starting Point Tier 0 that focuses on exploiting an RDP misconfiguration.
 
 ## Task 1
 
