@@ -10,4 +10,5 @@
 | [Pennyworth](Pennyworth/) | Very Easy | Linux | - Weak Credentials | - Groovy Scripting<br>- Packet Capture<br>- Password Cracking<br>- Reverse Shell | - BurpSuite<br>- hydra<br>- Nmap|
 | [Responder](Responder/)     | Very Easy  | Windows | - RFI<br>- Weak Credentials | - Credential Theft<br>- Dir Busting<br>- Hash Cracking| - curl<br>- Evil-WinRM<br>- John the Ripper<br>- Nmap<br>- Responder |
 | [Sequel](Sequel/)           | Very Easy  | Linux   | - MariaDB | | - MariaDB<br>- Nmap |
+| [Tactics](Tactics/) | Very Easy | Windows | - Weak Credentials<br>- SMB | - Bypassing Firewalls<br>- Password Cracking | - Impacket<br>- Metasploit<br>- Nmap|
 | [Three](Three/)             | Very Easy  | Linux   | - AWS S3 Buckets | -Bash Scripting<br>- PHP Scripting<br>- Reverse Shell<br>-Service Discovery<br>- Subdomain Enumeration | - AWS CLI<br>- Gobuster<br>- Netcat<br>- Nmap<br>- Python http.server |
