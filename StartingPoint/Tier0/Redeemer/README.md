@@ -20,7 +20,7 @@ We use the `nmap` command with the `-p-` flag to scan every port on the machine.
 
 ## Task 3
 
-*What type of database is Redis? Choose from the following options: (i) In-memory Database, (ii) Traditional Database**
+**What type of database is Redis? Choose from the following options: (i) In-memory Database, (ii) Traditional Database**
 
 > In-memory Database
 
