@@ -1,4 +1,34 @@
 # Starting Point Tier 0
+<h2>Simple Table Without Shadows in Rows</h2>
+
+<table style="border-collapse: collapse; width: 100%;">
+    <thead>
+        <tr>
+            <th style="padding: 8px; text-align: left;">Header 1</th>
+            <th style="padding: 8px; text-align: left;">Header 2</th>
+            <th style="padding: 8px; text-align: left;">Header 3</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td style="padding: 8px; text-align: left;">Row 1, Cell 1</td>
+            <td style="padding: 8px; text-align: left;">Row 1, Cell 2</td>
+            <td style="padding: 8px; text-align: left;">Row 1, Cell 3</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; text-align: left;">Row 2, Cell 1</td>
+            <td style="padding: 8px; text-align: left;">Row 2, Cell 2</td>
+            <td style="padding: 8px; text-align: left;">Row 2, Cell 3</td>
+        </tr>
+        <tr>
+            <td style="padding: 8px; text-align: left;">Row 3, Cell 1</td>
+            <td style="padding: 8px; text-align: left;">Row 3, Cell 2</td>
+            <td style="padding: 8px; text-align: left;">Row 3, Cell 3</td>
+        </tr>
+    </tbody>
+</table>
+
+
 <table style="border-bottom: 5px solid black;border-top: 3px solid black;border-left: 3px solid black;border-right: 3px solid black; text-align:center; width: 100%;border-collapse: collapse;">
 <!-- Start Header -->
     <tr style="border-top: 2px solid black;border-left: 2px solid black;border-right: 2px solid black;background: none;background: none;">
