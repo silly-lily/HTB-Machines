@@ -7,7 +7,7 @@
         <th rowspan="2" style="text-align:center;width: 10%;">Collection</th>
         <th rowspan="2" style="text-align:center;width: 10%;">Difficulty</th>
         <th rowspan="2" style="text-align:center;width: 10%;">OS</th>
-        <th colspan="3" style="text-align:center;width:45%;">MITRE ATT&CK</th>
+        <th colspan="3" style="text-align:center;width:35%;">MITRE ATT&CK</th>
         <th rowspan="2" style="text-align:center;width:15%">Tools</th>
     </tr>
     <tr style="border-left: 2px solid black;border-right: 2px solid black;">
