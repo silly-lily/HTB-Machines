@@ -65,7 +65,7 @@ We [find](https://magento.stackexchange.com/questions/216328/magento-2-admin-pas
 - Passwords need to be at least 7 characters
 - Passwords need to contain a letter and a number
 
-Now we use [Cyber New&#39;s List of Most Used Passwords](https://cybernews.com/best-password-managers/most-common-passwords/):
+Now we use [Cyber New's List of Most Used Passwords](https://cybernews.com/best-password-managers/most-common-passwords/):
 
 - 123456
 - 123456789

@@ -1,6 +1,6 @@
 # Appointment Machine
 
-Appointment Machine is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on dir busting using Gobuster and SQLi.
+Appointment Machine is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on  SQLi.
 
 ## Task 1
 

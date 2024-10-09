@@ -74,6 +74,4 @@ We can use the command `psexec.py Administrator@{TARGET IP}` to get a shell on t
 
 ## Flag
 
-> Flag
-
-Explanation
+> f751c19eda8f61ce81827e6930a1f40c

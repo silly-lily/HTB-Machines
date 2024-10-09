@@ -1,6 +1,6 @@
 # Sequel
 
-Sequel is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on logging into MariaDB without a password.
+Sequel is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on logging into MariaDB without a password.
 
 ## Task 1
 

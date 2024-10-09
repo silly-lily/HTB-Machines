@@ -82,7 +82,7 @@ Now we click on the `Action` button and choose `Send to Repeater`. Then we click
 
 ![Repeater](repeater1.png)
 
-Then we go to [HackTricks&#39;s SSTI Page](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection) and find the `Handlebars (NodeJS)` section. We see this Javascript code that will allow us to make a syscall using the privileges the website has.
+Then we go to [HackTricks's SSTI Page](https://book.hacktricks.xyz/pentesting-web/ssti-server-side-template-injection) and find the `Handlebars (NodeJS)` section. We see this Javascript code that will allow us to make a syscall using the privileges the website has.
 
 ```javascript
 {{#with "s" as |string|}}
