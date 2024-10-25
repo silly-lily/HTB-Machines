@@ -12,3 +12,8 @@ In progress
     - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
     - Tags: PHP, Custom Applications, Apache, Reconnaissance, Web Site Structure Discovery, Cookie 
     Manipulation, SUID Exploitation, Authentication bypass, Clear Text Credentials, Arbitrary File Upload, Insecure Direct Object Reference (IDOR), Path Hijacking
+- [Vaccine](/StartingPoint/Tier2/Vaccine/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
+    - Tags: Vulnerability Assessment, Databases, Custom Applications, Protocols, Source Code Analysis, Apache, PostgreSQL, FTP, PHP, Reconnaissance, Password Cracking, SUDO Exploitation, SQL Injection, Remote Code Execution, Clear Text Credentials, Anonymous/Guest Access

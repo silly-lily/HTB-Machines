@@ -144,7 +144,7 @@ Now we can run the `/usr/bin/bugtracker` executable. We give an ID of 500. The e
 
 The executable for the `cat` command is stored at `/bin/cat`. We have privileges in the `/tmp` directory. In the `/tmp` directory, we make a new executable `cat` with the contents `/bin/sh`. Then we modify the path variable. Now the executable for the `cat` command is the file that we wrote:
 
-![Replaced Cat Command](cat.png)
+![Replaced Cat Command](overwriting_cat.png)
 
 We can execute the `cat` command and any following command will be executed by our bash shell as the root user:
 

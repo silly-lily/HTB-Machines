@@ -88,7 +88,7 @@ We use navigate to sql_svc's desktop and use the `cat` command to view the user 
 
 ![User Flag](flag1.png)
 
-## Administrator Flag
+## Root Flag
 > b91ccec3305e98240082d4474b848528
 
 Lastly we use Impacket's psexec script with our stolen Administrator credentials to login to the target machine. We then view the contents of the Administrator flag `root.txt` with the `more` command:

@@ -101,3 +101,8 @@
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
     - Tags: Cloud, Custom Applications, AWS, Reconnaissance, Web Site Structure Discovery, Bucket Enumeration, Arbitrary File Upload, Anonymous/Guest Access
+- [Vaccine](/StartingPoint/Tier2/Vaccine/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
+    - Tags: Vulnerability Assessment, Databases, Custom Applications, Protocols, Source Code Analysis, Apache, PostgreSQL, FTP, PHP, Reconnaissance, Password Cracking, SUDO Exploitation, SQL Injection, Remote Code Execution, Clear Text Credentials, Anonymous/Guest Access
