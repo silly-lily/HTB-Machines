@@ -45,6 +45,11 @@
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
     - Tags: Common Applications, Magento, Reconnaissance, Web Site Structure Discovery, Weak Credentials
+- [Included](/StartingPoint/Tier2/Included/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
+    - Tags: PHP, Custom Applications, Protocols, Apache, TFTP, LXD, Reconnaissance, Local File Inclusion, Clear Text Credentials, Arbitrary File Upload
 - [Meow](/StartingPoint/Tier0/Meow/)
     - OS: Linux
     - Difficulty: Very Easy

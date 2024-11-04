@@ -6,6 +6,11 @@ In progress
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
     - Tags: Protocols, MSSQL, SMB, Powershell, Reconnaissance, Remote Code Execution, Clear Text Credentials, Information Disclosure, Anonymous/Guest Access
+- [Included](/StartingPoint/Tier2/Included/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
+    - Tags: PHP, Custom Applications, Protocols, Apache, TFTP, LXD, Reconnaissance, Local File Inclusion, Clear Text Credentials, Arbitrary File Upload
 - [Oopsie](/StartingPoint/Tier2/Oopsie/)
     - OS: Linux
     - Difficulty: Very Easy
