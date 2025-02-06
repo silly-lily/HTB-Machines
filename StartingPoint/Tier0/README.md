@@ -1,0 +1,43 @@
+# Starting Point Tier 0
+Completed on 9/9/2024
+
+- [Dancing](Dancing/)
+    - OS: Windows
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
+    - Tags: Protocols, SMB, Reconnaissance, Anonymous/Guest Access
+- [Explosion](Explosion/)
+    - OS: Windows
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
+    - Tags: Programming, RDP, Reconnaissance, Weak Credentials
+- [Fawn](Fawn/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
+    - Tags: FTP, Protocols, Reconnaissance, Anonymous/Guest Access
+- [Meow](Meow/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
+    - Tags: Telnet, Protocols, Reconnaissance, Weak Credentials, Misconfiguration
+- [Mongod](Mongod/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
+    - Tags: MongoDB, Databases, Reconnaissance, Misconfiguration, Anonymous/Guest Access
+- [Preignition](Preignition/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
+    - Tags: Custom Applications, Apache, Reconnaissance, Web Site Structure Discovery, Default Credentials
+- [Redeemer](Redeemer/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
+    - Tags: Redis, Vulnerability Assessment, Databases, Reconnaissance, Anonymous/Guest Access
+- [Synced](Synced/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
+    - Tags: Rsync, Protocols, Reconnaissance, Anonymous/Guest Access

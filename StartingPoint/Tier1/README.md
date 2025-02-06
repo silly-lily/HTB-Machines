@@ -1,0 +1,53 @@
+# Starting Point Tier 1
+Completed on 9/30/2024
+
+- [Appointment](Appointment/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: Databases, Apache, MariaDB, PHP, SQL, Reconnaissance, SQL Injection
+- [Bike](Bike/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: Custom Applications, NodeJS, Reconnaissance, Remote Code Execution, Server Side Template Injection (SSTI)
+- [Crocodile](Crocodile/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: Custom Applications, Protocols, Apache, FTP, Reconnaissance, Web Site Structure Discovery, Clear Text Credentials, Anonymous/Guest Access
+- [Funnel](Funnel/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: FTP, PostgreSQL, Reconnaissance, Tunneling, Password Spraying, Port Forwarding, Anonymous/Guest Access, Clear Text Credentials
+- [Ignition](Ignition/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: Common Applications, Magento, Reconnaissance, Web Site Structure Discovery, Weak Credentials
+- [Pennyworth](Pennyworth/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: Common Applications, Jenkins, Java, Reconnaissance, Remote Code Execution, Default Credentials
+- [Responder](Responder/)
+    - OS: Windows
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: WinRM, Custom Applications, Protocols, XAMPP, SMB, Responder, PHP, Reconnaissance, Password Cracking, Hash Capture, Remote File Inclusion, Remote Code Execution
+- [Sequel](Sequel/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: Vulnerability Assessment, Databases, MySQL, SQL, Reconnaissance, Weak Credentials
+- [Tactics](Tactics/)
+    - OS: Windows
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: Protocols, SMB, Reconnaissance, Misconfiguration
+- [Three](Three/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: Cloud, Custom Applications, AWS, Reconnaissance, Web Site Structure Discovery, Bucket Enumeration, Arbitrary File Upload, Anonymous/Guest Access
