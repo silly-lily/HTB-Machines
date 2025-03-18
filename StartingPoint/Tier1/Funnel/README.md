@@ -1,8 +1,14 @@
-# Funnel
+### Funnel
 
-Funnel is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on exploiting FTP misconfigurations to gain access to a private FTP server. It also focuses on exploiting the use of default passwords to setup local SSH Tunneling to gain access to a postgresql database.
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br>
+**Tags:** FTP, PostgreSQL, Reconnaissance, Tunneling, Password Spraying, Port Forwarding, Anonymous/Guest Access, Clear Text Credentials<br>
 
-## Task 1
+
+---
+
+#### Task 1
 
 **How many TCP ports are open?**
 
@@ -10,7 +16,11 @@ Funnel is a very easy linux machine on Hack The Box Starting Point Tier 1 that f
 
 ![Nmap TCP Scan](nmap.png)
 
-## Task 2
+
+
+---
+
+#### Task 2
 
 **What is the name of the directory that is available on the FTP server?**
 
@@ -20,7 +30,11 @@ First we log into the ftp server with the username `anonymous` and a blank passw
 
 ![Directory](directory.png)
 
-## Task 3
+
+
+---
+
+#### Task 3
 
 **What is the default account password that every new member on the "Funnel" team should change as soon as possible?**
 
@@ -62,7 +76,11 @@ be changed immediately.
 
 In `password_policy.txt`, we see that the default password is `funnel123#!#`.
 
-## Task 4
+
+
+---
+
+#### Task 4
 
 **Which user has not changed their default password yet?**
 
@@ -103,7 +121,11 @@ Next we try to log into the FTP server with each of usernames and the password `
 
 ![Default Password Log In](default_password.png)
 
-## Task 5
+
+
+---
+
+#### Task 5
 
 **Which service is running on TCP port 5432 and listens only on localhost?**
 
@@ -111,13 +133,21 @@ Next we try to log into the FTP server with each of usernames and the password `
 
 ![Nmap Scan of Port 5432](nmap2.png)
 
-## Task 6
+
+
+---
+
+#### Task 6
 
 **Since you can't access the previously mentioned service from the local machine, you will have to create a tunnel and connect to it from your machine. What is the correct type of tunneling to use? remote port forwarding or local port forwarding?**
 
 > local port forwarding
 
-## Task 7
+
+
+---
+
+#### Task 7
 
 **What is the name of the database that holds the flag?**
 
@@ -151,7 +181,11 @@ Then we use the `\c` command to choose the database named `secret`. Then we use 
 
 ![List secret Tables](table.png)
 
-## Task 8
+
+
+---
+
+#### Task 8
 
 **Could you use a dynamic tunnel instead of local port forwarding? Yes or No.**
 
@@ -159,10 +193,17 @@ Then we use the `\c` command to choose the database named `secret`. Then we use 
 
 Dynamic port forwarding would forward a connection from our computer to the target machine and then to the destination host across multiple ports.
 
-## Flag
+
+
+---
+
+#### Flag
 
 > cf277664b1771217d7006acdea006db1
 
 In our SQL shell after we choose the `secret` database, we use the `SELECT` command to select every row in the `flag` table:
 
 ![Flag](flag.png)
+
+
+---

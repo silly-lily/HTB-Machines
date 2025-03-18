@@ -1,8 +1,14 @@
-# Responder
+### Responder
 
-Responder is a very easy windows machine on Hack The Box Starting Point Tier 1 that focuses on remote file inclusion vulnerabilities, login credential theft, and weak credentials using Responder, John the Ripper, and Evil-WinRM.
+**OS:** Windows<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br>
+**Tags:** WinRM, Custom Applications, Protocols, XAMPP, SMB, Responder, PHP, Reconnaissance, Password Cracking, Hash Capture, Remote File Inclusion, Remote Code Execution<br>
 
-## Task 1
+
+---
+
+#### Task 1
 
 **When visiting the web service using the IP address, what is the domain that we are being redirected to?**
 
@@ -12,7 +18,11 @@ We use the `curl` command with the `-L` flag to follow the redirect:
 
 ![Redirect](redirect.png)
 
-## Task 2
+
+
+---
+
+#### Task 2
 
 **Which scripting language is being used on the server to generate webpages?**
 
@@ -22,7 +32,11 @@ We use the `curl` command with the `-I` flag to get the header:
 
 ![Header](header.png)
 
-## Task 3
+
+
+---
+
+#### Task 3
 
 **What is the name of the URL parameter which is used to load different language versions of the webpage?**
 
@@ -41,25 +55,41 @@ Now the website appears correctly in our browser:
 
 Upon looking at the website, we notice a navigation pane in the top right corner. We see that clicking on the `EN` button gives us options to change the website language to `FR` and `DE`. Clicking on the `FR` button changes the website language to French and redirects us to `http://unika.htb/index.php?page=french.html`. Clicking on the `DE` button changes the website language to German and redirects us to `http://unika.htb/index.php?page=german.html`. When the website language is changed to both French and German, the website uses the URL parameter `page` to load a different language version of the web page.
 
-## Task 4
+
+
+---
+
+#### Task 4
 
 **Which of the following values for the `page` parameter would be an example of exploiting a Local File Include (LFI) vulnerability: "french.html", "//10.10.14.6/somefile", "../../../../../../../../windows/system32/drivers/etc/hosts", "minikatz.exe"**
 
 > ../../../../../../../../windows/system32/drivers/etc/hosts
 
-## Task 5
+
+
+---
+
+#### Task 5
 
 **Which of the following values for the `page` parameter would be an example of exploiting a Remote File Include (RFI) vulnerability: "french.html", "//10.10.14.6/somefile", "../../../../../../../../windows/system32/drivers/etc/hosts", "minikatz.exe"**
 
 > //10.10.14.6/somefile
 
-## Task 6
+
+
+---
+
+#### Task 6
 
 **What does NTLM stand for?**
 
 > New Technology LAN Manager
 
-## Task 7
+
+
+---
+
+#### Task 7
 
 **Which flag do we use in the Responder utility to specify the network interface?**
 
@@ -69,13 +99,21 @@ We use Responder on the `tun0` interface:
 
 ![Launching Responder](responder1.png)
 
-## Task 8
+
+
+---
+
+#### Task 8
 
 **There are several tools that take a NetNTLMv2 challenge/response and try millions of passwords to see if any of them generate the same response. One such tool is often referred to as `john`, but the full name is what?.**
 
 > john the ripper
 
-## Task 9
+
+
+---
+
+#### Task 9
 
 **What is the password for the administrator user?**
 
@@ -89,16 +127,27 @@ Next we use the `wget` command to download the [rockyou.txt wordlist](https://gi
 
 ![John The Ripper](john.png)
 
-## Task 10
+
+
+---
+
+#### Task 10
 
 **We'll use a Windows service (i.e. running on the box) to remotely access the Responder machine using the password we recovered. What port TCP does it listen on?**
 
 > 5985
 
-## Flag
+
+
+---
+
+#### Flag
 
 > ea81b7afddd03efaa0945333ed147fac
 
 We login to the Evil-WinRM shell with our stolen credentials. Then we view the contents the `flag.txt` file:
 
 ![Flag](flag.png)
+
+
+---

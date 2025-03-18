@@ -1,21 +1,40 @@
-# Machine Name
-Pennyworth is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on password cracking and reverse shells.
+### Pennyworth
 
-## Task 1
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br>
+**Tags:** Common Applications, Jenkins, Java, Reconnaissance, Remote Code Execution, Default Credentials<br>
+
+
+---
+
+#### Task 1
 **What does the acronym CVE stand for?**
 > Common Vulnerabilities and Exposures
 
-## Task 2
+
+
+---
+
+#### Task 2
 **What do the three letters in CIA, referring to the CIA triad in cybersecurity, stand for?**
 > confidentiality, integrity, availability
 
-## Task 3
+
+
+---
+
+#### Task 3
 **What is the version of the service running on port 8080?**
 > Jetty 9.4.39.v20210325
 
 ![Scanning Port 8080](port8080.png)
 
-## Task 4
+
+
+---
+
+#### Task 4
 **What version of Jenkins is running on the target?**
 > 2.289.1
 
@@ -45,25 +64,45 @@ Hydra finds that the credential pair `root` and `password` are valid. Lastly, lo
 
 ![Logged In](loggedin.png)
 
-## Task 5
+
+
+---
+
+#### Task 5
 **What type of script is accepted as input on the Jenkins Script Console?**
 > Groovy
 
-## Task 6
+
+
+---
+
+#### Task 6
 **What would the "String cmd" variable from the Groovy Script snippet be equal to if the Target VM was running Windows?**
 > cmd.exe
 
-## Task 7
+
+
+---
+
+#### Task 7
 **What is a different command than "ip a" we could use to display our network interfaces' information on Linux?**
 > ifconfig
 
 ![ifconfig](ifconfig.png)
 
-## Task 8
+
+
+---
+
+#### Task 8
 **What switch should we use with netcat for it to use UDP transport mode?**
 > -u
 
-## Task 9
+
+
+---
+
+#### Task 9
 **What is the term used to describe making a target host initiate a connection back to the attacker host?**
 > reverse shell
 
@@ -132,9 +171,15 @@ After we use the `Script Console` to run our reverse shell java code, we can go 
 
 ![Reverse Shell](reverse_shell.png)
 
-## Flag
+
+
+---
+
+#### Flag
 > 9cdfb439c7876e703e307864c9167a15
 
 Lastly we search for the flag file and then display its contents:
 
 ![Flag](flag.png)
+
+---

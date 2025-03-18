@@ -1,8 +1,14 @@
-# Crocodile
+### Crocodile
 
-Crocodile is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on exploiting FTP misconfigurations to steal user credentials and using Gobuster to discover web pages.
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br>
+**Tags:** Custom Applications, Protocols, Apache, FTP, Reconnaissance, Web Site Structure Discovery, Clear Text Credentials, Anonymous/Guest Access<br>
 
-## Task 1
+
+---
+
+#### Task 1
 
 **What Nmap scanning switch employs the use of default scripts during a scan?**
 
@@ -10,19 +16,31 @@ Crocodile is a very easy linux machine on Hack The Box Starting Point Tier 1 tha
 
 ![Using Nmap With Default Scripts](default_scripts.png)
 
-## Task 2
+
+
+---
+
+#### Task 2
 
 **What service version is found to be running on port 21?**
 
 > vsftpd 3.0.3
 
-## Task 3
+
+
+---
+
+#### Task 3
 
 **What FTP code is returned to us for the "Anonymous FTP login allowed" message?**
 
 > 230
 
-## Task 4
+
+
+---
+
+#### Task 4
 
 **After connecting to the FTP server using the ftp client, what username do we provide when prompted to log in anonymously?**
 
@@ -30,7 +48,11 @@ Crocodile is a very easy linux machine on Hack The Box Starting Point Tier 1 tha
 
 ![Logging In Anonymously](anonymous_login.png)
 
-## Task 5
+
+
+---
+
+#### Task 5
 
 **After connecting to the FTP server anonymously, what command can we use to download the files we find on the FTP server?**
 
@@ -40,7 +62,11 @@ We use the `get` command to download the `allowed.userlist` file:
 
 ![Get File](get.png)
 
-## Task 6
+
+
+---
+
+#### Task 6
 
 **What is one of the higher-privilege sounding usernames in 'allowed.userlist' that we download from the FTP server?**
 
@@ -50,7 +76,11 @@ We login to the ftp server and download the `allowed.userlist` file using the `g
 
 ![Allowed Users](allowed_users.png)
 
-## Task 7
+
+
+---
+
+#### Task 7
 
 **What version of Apache HTTP Server is running on the target host?**
 
@@ -58,7 +88,11 @@ We login to the ftp server and download the `allowed.userlist` file using the `g
 
 ![Apache HTTP Server Version](Apache_version.png)
 
-## Task 8
+
+
+---
+
+#### Task 8
 
 **What switch can we use with Gobuster to specify we are looking for specific filetypes?**
 
@@ -72,13 +106,21 @@ Then we use Gobuster in directory/file enumeration mode with the wordlist set to
 
 ![Gobuster PHP File Search](Gobuster.png)
 
-## Task 9
+
+
+---
+
+#### Task 9
 
 **Which PHP file can we identify with directory brute force that will provide the opportunity to authenticate to the web service?**
 
 > login.php
 
-## Flag
+
+
+---
+
+#### Flag
 
 > c7110277ac44d78b6a9fff2232434d16
 
@@ -93,3 +135,6 @@ Then we go to the login page at `http://{target IP}/login.php` and try every use
 We login to the `admin` account and see the flag:
 
 ![Flag](flag.png)
+
+
+---
