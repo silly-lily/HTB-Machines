@@ -1,19 +1,35 @@
-# Unified
-Unified is a very easy linux machine on Hack The Box Starting Point Tier 2 that focuses on the rogue jndi exploit and MongoDB.
+### Unified
 
-## Task 1
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 2](/StartingPoint/Tier2/)<br><br>
+**Tags:** Vulnerability Assessment, Databases, Custom Applications, MongoDB, Java, Reconnaissance, Clear Text Credentials, Default Credentials, Code Injection<br>
+
+
+
+---
+
+#### Task 1
 **Which are the first four open ports?**
 > 22,6789,8080,8443
 
 ![Open Ports](open_ports.png)
 
-## Task 2
+
+
+---
+
+#### Task 2
 **What is the title of the software that is running running on port 8443?**
 > UniFi Network
 
 ![Software Title](software_title.png)
 
-## Task 3
+
+
+---
+
+#### Task 3
 **What is the version of the software that is running?**
 > 6.4.54
 
@@ -21,17 +37,29 @@ We visit `https://{TARGET IP}:8443`:
 
 ![Software Version](software_version.png)
 
-## Task 4
+
+
+---
+
+#### Task 4
 **What is the CVE for the identified vulnerability?**
 > CVE-2021-44228
 
 We see that The Unifi Network Application Versions prior to 6.5.54 are vulnerable to [CVE-2021-44228](https://github.com/puzzlepeaches/Log4jUnifi).
 
-## Task 5
+
+
+---
+
+#### Task 5
 **What protocol does JNDI leverage in the injection?**
 > ldap
 
-## Task 6
+
+
+---
+
+#### Task 6
 **What tool do we use to intercept the traffic, indicating the attack was successful?**
 > tcpdump
 
@@ -45,11 +73,19 @@ Checking `tcpdump`, we see an incoming ldap connection to our machine, meaning t
 
 ![tcpdump ldap connection](tcpdump.png)
 
-## Task 7
+
+
+---
+
+#### Task 7
 **What port do we need to inspect intercepted traffic for?**
 > 389
 
-## Task 8
+
+
+---
+
+#### Task 8
 **What port is the MongoDB service running on?**
 > 27117
 
@@ -87,11 +123,19 @@ In our reverse shell, we see that the MongoDB service is running on port 27117:
 
 ![MongoDB Port](mongo_port.png)
 
-## Task 9
+
+
+---
+
+#### Task 9
 **What is the default database name for UniFi applications?**
 > ace
 
-## Task 10
+
+
+---
+
+#### Task 10
 **What is the function we use to enumerate users within the database in MongoDB?**
 > db.admin.find()
 
@@ -99,7 +143,11 @@ We can use the `db.admin.find()` functions to enumerate users:
 
 ![Enumerate Users](list_users.png)
 
-## Task 11
+
+
+---
+
+#### Task 11
 **What is the function we use to update users within the database in MongoDB?**
 > db.admin.update()
 
@@ -121,7 +169,11 @@ We are now able to login to the target website using the username `administrator
 
 ![Login](login.png)
 
-## Task 12
+
+
+---
+
+#### Task 12
 **What is the password for the root user?**
 > NotACrackablePassword4U2022
 
@@ -129,12 +181,18 @@ While logged into the target website as the `administrator`, we click on the `se
 
 ![Root Password](root_password.png)
 
-## User Flag
+
+
+---
+
+#### User Flag
 > 6ced1a6a89e666c0620cdb10262ba127
 
 ![User Flag](user_flag.png)
 
-## Root Flag
+
+
+#### Root Flag
 > e50bc93c75b634e4b272d2f771c33681
 
 We connect to the target machine using our credentials for root:
@@ -145,3 +203,5 @@ ssh root@{TARGET IP}
 Then we find the root flag:
 
 ![Root Flag](root_flag.png)
+
+---

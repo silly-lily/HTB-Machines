@@ -2,7 +2,7 @@
 
 **OS:** Windows<br>
 **Difficulty:** Very Easy<br>
-**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br>
+**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br><br>
 **Tags:** WinRM, Custom Applications, Protocols, XAMPP, SMB, Responder, PHP, Reconnaissance, Password Cracking, Hash Capture, Remote File Inclusion, Remote Code Execution<br>
 
 

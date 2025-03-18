@@ -1,11 +1,23 @@
-# Machine Name
-Oopsie is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on privilege escalation by altering website cookies and by overwriting the linux path environment variable.
+### Oopsie
 
-## Task 1
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 2](/StartingPoint/Tier2/)<br><br>
+**Tags:** PHP, Custom Applications, Apache, Reconnaissance, Web Site Structure Discovery, Cookie  Manipulation, SUID Exploitation, Authentication bypass, Clear Text Credentials, Arbitrary File Upload, Insecure Direct Object Reference (IDOR), Path Hijacking<br>
+
+
+
+---
+
+#### Task 1
 **With what kind of tool can intercept web traffic?**
 > proxy
 
-## Task 2
+
+
+---
+
+#### Task 2
 **What is the path to the directory on the webserver that returns a login page?**
 > /cdn-cgi/login
 
@@ -17,7 +29,11 @@ We navigate to the login page `http://{TARGET IP}/cdn-cgi/login`:
 
 ![Login Page](login_page.png)
 
-## Task 3
+
+
+---
+
+#### Task 3
 **What can be modified in Firefox to get access to the upload page?**
 > cookie
 
@@ -29,7 +45,11 @@ We go to the Proxy Tab and then Intercept Tab in BurpSuite. Then we turn interce
 
 ![Intercepted Upload HTTP Request](upload_request.png)
 
-## Task 4
+
+
+---
+
+#### Task 4
 **What is the access ID of the admin user?**
 > 34322
 
@@ -60,7 +80,11 @@ Lastly, we navigate to `http://{TARGET IP}cdn-cgi/login/admin.php?content=accoun
 
 ![Admin Account Information](admin_account.png)
 
-## Task 5
+
+
+---
+
+#### Task 5
 **On uploading a file, what directory does that file appear in on the server?**
 > /uploads
 
@@ -76,7 +100,11 @@ We make a file called `test.txt` and upload it. Next we use gobuster to search f
 
 ![Gobuster Find Uploaded File](gobuster.png)
 
-## Task 6
+
+
+---
+
+#### Task 6
 **What is the file that contains the password that is shared with the robert user?**
 > db.php
 
@@ -100,7 +128,11 @@ In our reverse shell, we search `the /var/www/html` directory for files containi
 ![Roberts Password](password.png)
 
 
-## Task 7
+
+
+---
+
+#### Task 7
 **What executible is run with the option "-group bugtracker" to identify all files owned by the bugtracker group?**
 > find
 
@@ -110,7 +142,11 @@ We run the bash find command to find the only file owned by the bugtracker group
 find / -group bugtracker 2>/dev/null
 ```
 
-## Task 8
+
+
+---
+
+#### Task 8
 **Regardless of which user starts running the bugtracker executable, what's user privileges will use to run?**
 > root
 
@@ -118,11 +154,19 @@ We can use stat to check the privileges of the `/usr/bin/bugtracker` file:
 
 ![Bugtracker Privileges](bugtracker_access.png)
 
-## Task 9
+
+
+---
+
+#### Task 9
 **What SUID stands for?**
 > Set owner User ID
 
-## Task 10
+
+
+---
+
+#### Task 10
 **What is the name of the executable being called in an insecure manner?**
 > cat
 
@@ -134,12 +178,18 @@ Now we can run the `/usr/bin/bugtracker` executable. We give an ID of 500. The e
 
 ![Error](cat.png)
 
-## User Flag
+
+
+---
+
+#### User Flag
 > f2c74ee8db7983851ab2a96a44eb7981
 
 ![User Flag](user_flag.png)
 
-## Root Flag
+
+
+#### Root Flag
 > af13b0bee69f8a877c3faf667f7beacf
 
 The executable for the `cat` command is stored at `/bin/cat`. We have privileges in the `/tmp` directory. In the `/tmp` directory, we make a new executable `cat` with the contents `/bin/sh`. Then we modify the path variable. Now the executable for the `cat` command is the file that we wrote:
@@ -149,3 +199,6 @@ The executable for the `cat` command is stored at `/bin/cat`. We have privileges
 We can execute the `cat` command and any following command will be executed by our bash shell as the root user:
 
 ![Root Flag](root_flag.png)
+
+
+---

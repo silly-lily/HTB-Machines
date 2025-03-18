@@ -2,7 +2,7 @@
 
 **OS:** Linux<br>
 **Difficulty:** Very Easy<br>
-**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br>
+**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br><br>
 **Tags:** Custom Applications, Protocols, Apache, FTP, Reconnaissance, Web Site Structure Discovery, Clear Text Credentials, Anonymous/Guest Access<br>
 
 

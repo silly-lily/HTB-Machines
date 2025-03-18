@@ -1,4 +1,5 @@
 *.ovpn
-TEMPLATE.md
+TEMPLATE*
 notes.txt
 .vscode
+test.py

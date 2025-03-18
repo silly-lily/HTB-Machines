@@ -1,27 +1,47 @@
-# Vaccine
+### Vaccine
 
-Vaccine is a very easy machine on Hack The Box Starting Point Tier 1 that focuses on privilege escalation using vim.
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 2](/StartingPoint/Tier2/)<br><br>
+**Tags:** Vulnerability Assessment, Databases, Custom Applications, Protocols, Source Code Analysis, Apache, PostgreSQL, FTP, PHP, Reconnaissance, Password Cracking, SUDO Exploitation, SQL Injection, Remote Code Execution, Clear Text Credentials, Anonymous/Guest Acces<br>
 
-## Task 1
+
+
+
+---
+
+#### Task 1
 **Besides SSH and HTTP, what other service is hosted on this box?**
 > FTP
 
 ![Nmap Scan of Target Machine](nmap.png)
 
-## Task 2
+
+
+---
+
+#### Task 2
 **This service can be configured to allow login with any password for specific username. What is that username?**
 > anonymous
 
 ![FTP Login Without Password](anon.png)
 
-## Task 3
+
+
+---
+
+#### Task 3
 **What is the name of the file downloaded over this service?**
 > backup.zip
 
 ![FTP File](ftp.png)
 
 
-## Task 4
+
+
+---
+
+#### Task 4
 **What script comes with the John The Ripper toolset and generates a hash from a password protected zip archive in a format to allow for cracking attempts?**
 > zip2john
 
@@ -33,7 +53,11 @@ We use John The Ripper with the builtin wordlist `/usr/share/wordlists/john.lst`
 
 ![Successful unzip](successful_unzip.png)
 
-## Task 5
+
+
+---
+
+#### Task 5
 **What is the password for the admin user on the website?**
 > qwerty789
 
@@ -48,7 +72,11 @@ The MD5 Hash of the password for the admin user is `2cb42f8734ea607eefed3b70af13
 We login to the target machine's website using the credentials `admin` and `qwerty789`:
 ![Successful Login](successful_login.png)
 
-## Task 6
+
+
+---
+
+#### Task 6
 **What option can be passed to sqlmap to try to get command execution via the sql injection?**
 > --os-shell
 
@@ -63,7 +91,11 @@ sqlmap -u "http://{TARGET IP}/dashboard.php?search=tmp" --cookie="PHPSESSID="{SE
 Now we have a shell as the postgres user on the target machine:
 ![OS Shell](os-shell.png)
 
-## Task 7
+
+
+---
+
+#### Task 7
 **What program can the postgres user run as root using sudo?**
 > vi
 
@@ -91,14 +123,20 @@ We don't have a fully functional reverse shell, so we use the credentials for th
 
 ![Postgres Permissions](postgres_permissions.png)
 
-## User Flag
+
+
+---
+
+#### User Flag
 > ec9b13ca4d6229cd5cc1e09980965bf7
 
 We get the postgres user flag from our os-shell:
 
 ![User Flag](user_flag.png)
 
-## Root Flag
+
+
+#### Root Flag
 > dd6e058e814260bc70e9bbdef2715849
 
 
@@ -118,3 +156,5 @@ Since we opened the vim editor, we can use the commands to get a shell as root:
 Then we find the flag:
 
 ![Flag](root_flag.png)
+
+---

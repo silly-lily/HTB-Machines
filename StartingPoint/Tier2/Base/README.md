@@ -1,11 +1,9 @@
 ### Base
 
-**OS: Linux**<br>
-**Difficulty: Very Easy**<br>
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
 **Collection:** [Starting Point Tier 2](/StartingPoint/Tier2/)<br><br>
-
 **Tags:** Vulnerability Assessment, Custom Applications, Source Code Analysis, Authentication, Apache, PHP, Reconnaissance, Web Site Structure Discovery, SUDO Exploitation, Authentication bypass, Clear Text Credentials, Arbitrary File Upload, Information Disclosure<br>
-**Tools**: Nmap, Burp Suite, Gobuster, Netcat
 
 ---
 

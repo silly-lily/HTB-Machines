@@ -1,13 +1,25 @@
-# Included
-Included is a very easy linux machine on Hack The Box Starting Point Tier 1 that focuses on exploiting local file inclusion vulnerabilities, TFTP, and linux containers.
+### Included
 
-## Task 1
+**OS:** Linux<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 2](/StartingPoint/Tier2/)<br><br>
+**Tags:** PHP, Custom Applications, Protocols, Apache, TFTP, LXD, Reconnaissance, Local File Inclusion, Clear Text Credentials, Arbitrary File Upload<br>
+
+
+
+---
+
+#### Task 1
 **What service is running on the target machine over UDP?**
 > tftp
 
 ![Nmap UDP Scan](nmap_udp.png)
 
-## Task 2
+
+
+---
+
+#### Task 2
 **What class of vulnerability is the webpage that is hosted on port 80 vulnerable to?**
 > Local File Inclusion
 
@@ -15,7 +27,11 @@ We visit the target website and see that the webpage has a `file` query paramete
 
 ![Local File Inclusion Vulnerability](lfi_test.png)
 
-## Task 3
+
+
+---
+
+#### Task 3
 **What is the default system folder that TFTP uses to store files?**
 > /var/lib/tftpboot/
 
@@ -23,7 +39,11 @@ We confirm that the target machine is storing TFTP files in `/var/lib/tftpboot/`
 
 ![TFTP Directory](tftp_dir.png)
 
-## Task 4
+
+
+---
+
+#### Task 4
 **Which interesting file is located in the web server folder and can be used for Lateral Movement?**
 > .htpasswd
 
@@ -46,7 +66,11 @@ We notice there is an `.htpasswd` file. We use `curl` to execute the command `ca
 
 ![Viewing .htpasswd File](htpasswd.png)
 
-## Task 5
+
+
+---
+
+#### Task 5
 **What is the group that user Mike is a part of and can be exploited for Privilege Escalation?**
 > lxd
 
@@ -68,7 +92,11 @@ We use the `id` command and find that mike is in the `lxd` group:
 
 ![Mike's Group](group.png)
 
-## Task 6
+
+
+---
+
+#### Task 6
 **When using an image to exploit a system via containers, we look for a very small distribution. Our favorite for this task is named after mountains. What is that distribution name?**
 > alpine
 
@@ -84,7 +112,11 @@ Then we upload the `alpine-v3.13-x86_64-20210218_0139.tar.gz` file to the TFTP S
 
 ![Importing Image](import_image.png)
 
-## Task 7
+
+
+---
+
+#### Task 7
 **What flag do we set to the container so that it has root privileges on the host system?**
 > security.privileged=true
 
@@ -96,18 +128,30 @@ Now we have a root shell:
 
 ![Root Shell](root.png)
 
-## Task 8
+
+
+---
+
+#### Task 8
 **If the root filesystem is mounted at /mnt in the container, where can the root flag be found on the container after the host system is mounted?**
 > /mnt/root/
 
 ![Mounted Root Filesystem](mounted_filesystem.png)
 
-## User Flag
+
+
+---
+
+#### User Flag
 > a56ef91d70cfbf2cdb8f454c006935a1
 
 ![User Flag](user_flag.png)
 
-## Root Flag
+
+
+#### Root Flag
 > c693d9c7499d9f572ee375d4c14c7bcf
 
 ![Root Flag](root_flag.png)
+
+---

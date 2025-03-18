@@ -1,8 +1,14 @@
-# Archetype
+### Archetype
 
-Archetype is a very easy Windows machine on Hack The Box Starting Point Tier 1 that focuses on credential theft and privilege escalation using winpeas and Impacket.
+**OS:** Windows<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 2](/StartingPoint/Tier2/)<br><br>
+**Tags:** Protocols, MSSQL, SMB, Powershell, Reconnaissance, Remote Code Execution, Clear Text Credentials, Information Disclosure, Anonymous/Guest Access<br>
 
-## Task 1
+
+---
+
+#### Task 1
 **Which TCP port is hosting a database server?**
 > 1433
 
@@ -10,7 +16,11 @@ Using the `nmap` command, we see that there is a `ms-sq-s` database server runni
 
 ![TCP Port Scan](tcp_scan.png)
 
-## Task 2
+
+
+---
+
+#### Task 2
 **What is the name of the non-Administrative share available over SMB?**
 > backups
 
@@ -18,7 +28,11 @@ We use the `smbclient` command with the `-N` flag to connect to the SMB Server w
 
 ![List All Shares on the SMB Server](list_shares.png)
 
-## Task 3
+
+
+---
+
+#### Task 3
 **What is the password identified in the file on the SMB share?**
 > M3g4c0rp123
 
@@ -26,7 +40,11 @@ We access the `backups` share anonymously and download the `prod.dtsConfig` file
 
 ![View Config File](password.png)
 
-## Task 4
+
+
+---
+
+#### Task 4
 **What script from Impacket collection can be used in order to establish an authenticated connection to a Microsoft SQL Server?**
 > mssqlclient.py
 
@@ -34,7 +52,11 @@ We can use the credentials we found in the `prod.dtsConfig` file to authenticate
 
 ![Impacket Authenticated Establishing Connection to SQL Server](mysql.png)
 
-## Task 5
+
+
+---
+
+#### Task 5
 **What extended stored procedure of Microsoft SQL Server can be used in order to spawn a Windows command shell?**
 > xp_cmdshell
 
@@ -42,7 +64,11 @@ In our SQL shell, we want to use the `xp_cmdshell` stored procedure and need to 
 
 ![Windows Command Shell](cmd_shell.png)
 
-## Task 6
+
+
+---
+
+#### Task 6
 **What script can be used in order to search possible paths to escalate privileges on Windows hosts?**
 > winpeas
 
@@ -67,7 +93,11 @@ Next we go back to our computer's netcat listener and see that we have a reverse
 
 ![Shell](shell.png)
 
-## Task 7
+
+
+---
+
+#### Task 7
 **What file contains the administrator's password?**
 > ConsoleHost_history.txt
 
@@ -81,16 +111,24 @@ Next we use the `cat` command to view the PowerShell history file:
 
 We see that there is an `Administrator` user with the password `MEGACORP_4dm1n!!`.
 
-## User Flag
+
+
+---
+
+#### User Flag
 > 3e7b102e78218e935bf3f4951fec21a3
 
 We use navigate to sql_svc's desktop and use the `cat` command to view the user flag `user.txt`:
 
 ![User Flag](flag1.png)
 
-## Root Flag
+
+
+#### Root Flag
 > b91ccec3305e98240082d4474b848528
 
 Lastly we use Impacket's psexec script with our stolen Administrator credentials to login to the target machine. We then view the contents of the Administrator flag `root.txt` with the `more` command:
 
 ![Administrator Flag](flag2.png)
+
+---

@@ -1,16 +1,25 @@
 # Starting Point Tier 2
-In progress
 
 - [Archetype](/StartingPoint/Tier2/Archetype/)
     - OS: Windows
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
     - Tags: Protocols, MSSQL, SMB, Powershell, Reconnaissance, Remote Code Execution, Clear Text Credentials, Information Disclosure, Anonymous/Guest Access
+- [Base](/StartingPoint/Tier2/Base/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
+    - Tags: Vulnerability Assessment, Custom Applications, Source Code Analysis, Authentication, Apache, PHP, Reconnaissance, Web Site Structure Discovery, SUDO Exploitation, Authentication bypass, Clear Text Credentials, Arbitrary File Upload, Information Disclosure
 - [Included](/StartingPoint/Tier2/Included/)
     - OS: Linux
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
     - Tags: PHP, Custom Applications, Protocols, Apache, TFTP, LXD, Reconnaissance, Local File Inclusion, Clear Text Credentials, Arbitrary File Upload
+- [Markup](/StartingPoint/Tier2/Markup/)
+    - OS: Windows
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
+    - Tags: Apache, SSH, PHP, Reconnaissance, Scheduled Job Abuse, Weak Credentials, Arbitrary File Upload, XXE Injection, Weak Permissions
 - [Oopsie](/StartingPoint/Tier2/Oopsie/)
     - OS: Linux
     - Difficulty: Very Easy

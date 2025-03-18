@@ -2,7 +2,7 @@
 
 **OS:** Linux<br>
 **Difficulty:** Very Easy<br>
-**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br>
+**Collection:** [Starting Point Tier 1](/StartingPoint/Tier1/)<br><br>
 **Tags:** FTP, PostgreSQL, Reconnaissance, Tunneling, Password Spraying, Port Forwarding, Anonymous/Guest Access, Clear Text Credentials<br>
 
 

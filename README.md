@@ -10,6 +10,11 @@
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
     - Tags: Protocols, MSSQL, SMB, Powershell, Reconnaissance, Remote Code Execution, Clear Text Credentials, Information Disclosure, Anonymous/Guest Access
+- [Base](/StartingPoint/Tier2/Base/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
+    - Tags: Vulnerability Assessment, Custom Applications, Source Code Analysis, Authentication, Apache, PHP, Reconnaissance, Web Site Structure Discovery, SUDO Exploitation, Authentication bypass, Clear Text Credentials, Arbitrary File Upload, Information Disclosure
 - [Bike](/StartingPoint/Tier1/Bike/)
     - OS: Linux
     - Difficulty: Very Easy
@@ -50,6 +55,15 @@
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
     - Tags: PHP, Custom Applications, Protocols, Apache, TFTP, LXD, Reconnaissance, Local File Inclusion, Clear Text Credentials, Arbitrary File Upload
+- [Lame](/Lame/)
+    - OS: Linux
+    - Difficulty: Easy
+    - Tags: Vulnerability Assessment, Enterprise Network, Common Services, Security Tools, Software & OS exploitation, Remote Code Execution
+- [Markup](/StartingPoint/Tier2/Markup/)
+    - OS: Windows
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
+    - Tags: Apache, SSH, PHP, Reconnaissance, Scheduled Job Abuse, Weak Credentials, Arbitrary File Upload, XXE Injection, Weak Permissions
 - [Meow](/StartingPoint/Tier0/Meow/)
     - OS: Linux
     - Difficulty: Very Easy
@@ -64,8 +78,7 @@
     - OS: Linux
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
-    - Tags: PHP, Custom Applications, Apache, Reconnaissance, Web Site Structure Discovery, Cookie 
-    Manipulation, SUID Exploitation, Authentication bypass, Clear Text Credentials, Arbitrary File Upload, Insecure Direct Object Reference (IDOR), Path Hijacking
+    - Tags: PHP, Custom Applications, Apache, Reconnaissance, Web Site Structure Discovery, Cookie  Manipulation, SUID Exploitation, Authentication bypass, Clear Text Credentials, Arbitrary File Upload, Insecure Direct Object Reference (IDOR), Path Hijacking
 - [Pennyworth](/StartingPoint/Tier1/Pennyworth/)
     - OS: Linux
     - Difficulty: Very Easy
@@ -80,17 +93,17 @@
     - OS: Windows
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
-    - Tags: WinRM, Custom Applications, Protocols, XAMPP, SMB, Responder, PHP, Reconnaissance, Password Cracking, Hash Capture, Remote File Inclusion, Remote Code Execution
-- [Sequel](/StartingPoint/Tier1/Sequel/)
-    - OS: Linux
-    - Difficulty: Very Easy
-    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
-    - Tags: Vulnerability Assessment, Databases, MySQL, SQL, Reconnaissance, Weak Credentials
+    - Tags: WinRM, Custom Applications, Protocols, XAMPP, SMB, Responder, PHP, Reconnaissance, Password Cracking, Hash Capture, Remote File Inclusion, Remote Code Executio
 - [Redeemer](/StartingPoint/Tier0/Redeemer/)
     - OS: Linux
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
     - Tags: Redis, Vulnerability Assessment, Databases, Reconnaissance, Anonymous/Guest Access
+- [Sequel](/StartingPoint/Tier1/Sequel/)
+    - OS: Linux
+    - Difficulty: Very Easy
+    - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
+    - Tags: Vulnerability Assessment, Databases, MySQL, SQL, Reconnaissance, Weak Credentials
 - [Synced](/StartingPoint/Tier0/Synced/)
     - OS: Linux
     - Difficulty: Very Easy
