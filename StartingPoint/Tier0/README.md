@@ -1,21 +1,22 @@
 # Starting Point Tier 0
-Completed on 9/9/2024
-
 - [Dancing](Dancing/)
     - OS: Windows
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
     - Tags: Protocols, SMB, Reconnaissance, Anonymous/Guest Access
+    - Tools: nmap, smbclient
 - [Explosion](Explosion/)
     - OS: Windows
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
     - Tags: Programming, RDP, Reconnaissance, Weak Credentials
+    - Tools: nmap, xfreerdp
 - [Fawn](Fawn/)
     - OS: Linux
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 0](/StartingPoint/Tier0/)
     - Tags: FTP, Protocols, Reconnaissance, Anonymous/Guest Access
+    - Tools: nmap, ftp client
 - [Meow](Meow/)
     - OS: Linux
     - Difficulty: Very Easy

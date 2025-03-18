@@ -1,20 +1,30 @@
-# Dancing Machine
+### Dancing
 
-Dancing is a very easy Windows machine on Hack The Box Starting Point Tier 0 that focuses on exploiting an SMB misconfiguration.
+**OS:** Windows<br>
+**Difficulty:** Very Easy<br>
+**Collection:** [Starting Point Tier 0](/StartingPoint/Tier0/)<br><br>
 
-## Task 1
+**Tags:** Protocols, SMB, Reconnaissance, Anonymous/Guest Access
+
+---
+
+#### Task 1
 
 **What does the 3-letter acronym SMB stand for?**
 
 > Server Message Block
 
-## Task 2
+---
+
+#### Task 2
 
 **What port does SMB use to operate at?**
 
 > 445
 
-## Task 3
+---
+
+#### Task 3
 
 **What is the service name for port 445 that came up in our Nmap scan?**
 
@@ -22,7 +32,9 @@ Dancing is a very easy Windows machine on Hack The Box Starting Point Tier 0 tha
 
 ![nmap scan](nmap.png)
 
-## Task 4
+---
+
+#### Task 4
 
 **What is the 'flag' or 'switch' that we can use with the smbclient utility to 'list' the available shares on Dancing?**
 
@@ -30,13 +42,17 @@ Dancing is a very easy Windows machine on Hack The Box Starting Point Tier 0 tha
 
 ![list shares](list.png)
 
-## Task 5
+---
+
+#### Task 5
 
 **How many shares are there on Dancing?**
 
 > 4
 
-## Task 6
+---
+
+#### Task 6
 
 **What is the name of the share we are able to access in the end with a blank password?**
 
@@ -46,7 +62,9 @@ We try accessing every share using a blank password except `IPC$`. We find that 
 
 ![accessing with blank password](access.png)
 
-## Task 7
+---
+
+#### Task 7
 
 **What is the command we can use within the SMB shell to download the files we find?**
 
@@ -56,10 +74,10 @@ We use the `get` command in the SMB shell to download the `flag.txt` file.
 
 ![download flag](download.png)
 
-## Flag
+---
+
+#### Flag
 
 > 5f61c10dffbc77a704d76016a22f1664
 
-We exit the SMB shell and then use the `cat` command to view the contents of `flag.txt`.
-
-![flag.txt](flag.png)
+---
