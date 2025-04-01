@@ -20,6 +20,10 @@
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 1](/StartingPoint/Tier1/)
     - Tags: Custom Applications, NodeJS, Reconnaissance, Remote Code Execution, Server Side Template Injection (SSTI)
+- [Cap](Cap/)
+    - OS: Linux
+    - Difficulty: Easy
+    - Tags: Forensics, Vulnerability Assessment, Web Application, Security Operations, Log Analysis, Common Security Controls, Clear Text Credentials, File System Configuration, Insecure Direct Object Reference (IDOR), Python
 - [Crocodile](/StartingPoint/Tier1/Crocodile/)
     - OS: Linux
     - Difficulty: Very Easy
