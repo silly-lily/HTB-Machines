@@ -1,4 +1,4 @@
-# Starting Point Tier 2
+### Starting Point Tier 2
 
 - [Archetype](/StartingPoint/Tier2/Archetype/)
     - OS: Windows

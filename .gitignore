@@ -1,5 +1,5 @@
 *.ovpn
 TEMPLATE*
-notes.txt
+notes
 .vscode
-test.py
+checklist.md

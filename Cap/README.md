@@ -7,7 +7,7 @@
 
 #### Insecure Direct Object Reference
 
-Running an [initial port scan](port_scan), we identify FTP, SSH, and HTTP services running on the target system. We then visit the website and discover that we are logged into a security dashboard with the username Nathan:
+Running an [initial port scan](port_scan.nmap), we identify FTP, SSH, and HTTP services running on the target system. We then visit the website and discover that we are logged into a security dashboard with the username Nathan:
 
 ![Website](website.png)
 

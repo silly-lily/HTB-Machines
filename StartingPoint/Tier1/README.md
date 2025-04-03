@@ -1,4 +1,4 @@
-# Starting Point Tier 1
+### Starting Point Tier 1
 
 - [Appointment](Appointment/)
     - OS: Linux

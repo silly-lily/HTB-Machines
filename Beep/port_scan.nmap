@@ -1,0 +1,25 @@
+# Nmap 7.94SVN scan initiated Thu Apr  3 12:03:29 2025 as: nmap -p22,25,80,110,111,143,443,855,993,995,3306,4190,4445,4559,5038,10000 -sV -oA port_scan2 10.129.229.183
+Nmap scan report for 10.129.229.183
+Host is up (0.0093s latency).
+
+PORT      STATE SERVICE    VERSION
+22/tcp    open  ssh        OpenSSH 4.3 (protocol 2.0)
+25/tcp    open  smtp?
+80/tcp    open  http       Apache httpd 2.2.3
+110/tcp   open  pop3?
+111/tcp   open  rpcbind    2 (RPC #100000)
+143/tcp   open  imap?
+443/tcp   open  ssl/https?
+855/tcp   open  status     1 (RPC #100024)
+993/tcp   open  imaps?
+995/tcp   open  pop3s?
+3306/tcp  open  mysql?
+4190/tcp  open  sieve?
+4445/tcp  open  upnotifyp?
+4559/tcp  open  hylafax?
+5038/tcp  open  asterisk   Asterisk Call Manager 1.1
+10000/tcp open  http       MiniServ 1.570 (Webmin httpd)
+Service Info: Host: 127.0.0.1
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Thu Apr  3 12:06:52 2025 -- 1 IP address (1 host up) scanned in 203.40 seconds

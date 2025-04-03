@@ -1,4 +1,4 @@
-# Starting Point Tier 0
+### Starting Point Tier 0
 - [Dancing](Dancing/)
     - OS: Windows
     - Difficulty: Very Easy

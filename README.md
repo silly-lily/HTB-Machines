@@ -1,4 +1,4 @@
-# HTB Machines
+### HTB Machines
 
 - [Appointment](/StartingPoint/Tier1/Appointment/)
     - OS: Linux
@@ -15,6 +15,10 @@
     - Difficulty: Very Easy
     - Collection: [Starting Point Tier 2](/StartingPoint/Tier2/)
     - Tags: Vulnerability Assessment, Custom Applications, Source Code Analysis, Authentication, Apache, PHP, Reconnaissance, Web Site Structure Discovery, SUDO Exploitation, Authentication bypass, Clear Text Credentials, Arbitrary File Upload, Information Disclosure
+- [Beep](/Beep/)
+    - OS: Linux
+    - Difficulty: Easy
+    - Tags: Web Application, Enterprise Network, Niche Technologies, Protocols, Telecom, Local File Inclusion, Remote Code Execution, PHP, Python
 - [Bike](/StartingPoint/Tier1/Bike/)
     - OS: Linux
     - Difficulty: Very Easy
